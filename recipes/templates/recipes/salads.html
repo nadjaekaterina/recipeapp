@@ -1,0 +1,18 @@
+{% extends 'recipes/base.html' %}
+
+{% block content %}
+    <h1>Salads</h1>
+    {% for recipe in recipes %}
+    {% if recipe.category == "Salads" %}
+      <div class="card my-4" style="width: 18rem; float:left; margin:10px">
+        <div class="card-body">
+          <h5 class="card-title">{{ recipe.title }}</h5>
+          <h6 class="card-subtitle mb-2 text-muted">{{ recipe.updated_at|date:"F d, Y" }}</h6>
+          <p>{{ recipe.picture|safe }}</p>
+          <p class="card-text">{{ recipe.ingredients|safe }}</p>
+          <a href="{% url 'recipes-detail' recipe.pk %}" class="card-link">View Recipe</a>
+        </div>
+      </div>
+    {% endif %}
+    {% endfor %}
+    {% endblock content %}

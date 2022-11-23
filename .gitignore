@@ -1,0 +1,24 @@
+# Distribution / packaging
+.Python
+venv/
+env/
+.env
+*.sqlite3
+.idea/
+# Project asset folders
+media/
+media
+static
+# Database
+db.sqlite3
+db.sqlite3-journal
+# Editor directories and files
+.idea
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+#Other
+*.log
+*.pot
+*.pyc
