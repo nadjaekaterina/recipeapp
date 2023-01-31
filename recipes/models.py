@@ -1,6 +1,6 @@
 from django.db import models
 from django.urls import reverse
-from ckeditor.fields import RichTextField 
+from ckeditor.fields import RichTextField
 
 #Category Dropdown
 CATEGORY_CHOICES = (
@@ -13,6 +13,7 @@ CATEGORY_CHOICES = (
     ('fish','FISH'),
     ('spreads','SPREADS'),
     ('sweets','SWEETS'),
+    ('sandwiches', 'SANDWICHES'),
 )
 
 # Create your models here.

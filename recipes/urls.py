@@ -21,4 +21,5 @@ urlpatterns = [
     path('meats/', views.meats, name="recipes-meats"),
     path('fish/', views.fish, name="recipes-fish"),
     path('spreads/', views.spreads, name="recipes-spreads"),
+    path('sandwiches/', views.sandwiches, name="recipes-sandwiches"),
 ]

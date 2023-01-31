@@ -105,3 +105,10 @@ def newrecipe(request):
         'recipes': recipes
     }
     return render(request, "recipes/newrecipe.html", context)
+
+def sandwiches(request):
+    recipes = models.Recipe.objects.all()
+    context = {
+        'recipes': recipes
+    }
+    return render(request, "recipes/sandwiches.html", context)

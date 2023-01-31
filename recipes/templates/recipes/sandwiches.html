@@ -1,9 +1,9 @@
 {% extends 'recipes/base.html' %}
 
 {% block content %}
-    <h1>Meats</h1>
+    <h1>Sandwiches</h1>
     {% for recipe in recipes %}
-    {% if recipe.category == "meats" %}
+    {% if recipe.category == "sandwiches" %}
       <div class="card my-4" style="width: 18rem; float:left; margin:10px">
         <div class="card-body">
           <h5 class="card-title">{{ recipe.title }}</h5>
